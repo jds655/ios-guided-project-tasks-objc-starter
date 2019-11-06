@@ -16,6 +16,12 @@
 		BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F34D234E3B2F00771883 /* LSITaskDetailViewController.m */; };
 		BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */; };
 		BD08F354234E3B3900771883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD08F353234E3B3900771883 /* Main.storyboard */; };
+		FBADAE072373381C0081608E /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = FBADAE062373381C0081608E /* LSITask.m */; };
+		FBADAE0923733A2A0081608E /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = FBADAE062373381C0081608E /* LSITask.m */; };
+		FBADAE0C237343880081608E /* LSITaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBADAE0B237343880081608E /* LSITaskController.m */; };
+		FBADAE0D237344B70081608E /* LSITaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBADAE0B237343880081608E /* LSITaskController.m */; };
+		FBADAE1023734A1D0081608E /* NSString+LSIRepeatString.m in Sources */ = {isa = PBXBuildFile; fileRef = FBADAE0F23734A1D0081608E /* NSString+LSIRepeatString.m */; };
+		FBADAE1123734A220081608E /* NSString+LSIRepeatString.m in Sources */ = {isa = PBXBuildFile; fileRef = FBADAE0F23734A1D0081608E /* NSString+LSIRepeatString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSITasksTableViewController.m; sourceTree = "<group>"; };
 		BD08F350234E3B3000771883 /* LSITasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSITasksTableViewController.h; sourceTree = "<group>"; };
 		BD08F353234E3B3900771883 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FBADAE052373381C0081608E /* LSITask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITask.h; sourceTree = "<group>"; };
+		FBADAE062373381C0081608E /* LSITask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITask.m; sourceTree = "<group>"; };
+		FBADAE0A237343880081608E /* LSITaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITaskController.h; sourceTree = "<group>"; };
+		FBADAE0B237343880081608E /* LSITaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITaskController.m; sourceTree = "<group>"; };
+		FBADAE0E23734A1D0081608E /* NSString+LSIRepeatString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LSIRepeatString.h"; sourceTree = "<group>"; };
+		FBADAE0F23734A1D0081608E /* NSString+LSIRepeatString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSIRepeatString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 		BD08F325234E3AF800771883 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				FBADAE08237338230081608E /* Model */,
 				BD08F326234E3AF800771883 /* AppDelegate.h */,
 				BD08F327234E3AF800771883 /* AppDelegate.m */,
 				BD08F329234E3AF800771883 /* SceneDelegate.h */,
@@ -127,6 +140,19 @@
 				BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */,
 			);
 			path = "Task Table View";
+			sourceTree = "<group>";
+		};
+		FBADAE08237338230081608E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBADAE052373381C0081608E /* LSITask.h */,
+				FBADAE062373381C0081608E /* LSITask.m */,
+				FBADAE0A237343880081608E /* LSITaskController.h */,
+				FBADAE0B237343880081608E /* LSITaskController.m */,
+				FBADAE0E23734A1D0081608E /* NSString+LSIRepeatString.h */,
+				FBADAE0F23734A1D0081608E /* NSString+LSIRepeatString.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBADAE1023734A1D0081608E /* NSString+LSIRepeatString.m in Sources */,
+				FBADAE0C237343880081608E /* LSITaskController.m in Sources */,
 				BD08F328234E3AF800771883 /* AppDelegate.m in Sources */,
 				BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */,
 				BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */,
+				FBADAE072373381C0081608E /* LSITask.m in Sources */,
 				BD08F339234E3AF900771883 /* main.m in Sources */,
 				BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */,
 			);
@@ -241,6 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBADAE1123734A220081608E /* NSString+LSIRepeatString.m in Sources */,
+				FBADAE0D237344B70081608E /* LSITaskController.m in Sources */,
+				FBADAE0923733A2A0081608E /* LSITask.m in Sources */,
 				BD08F343234E3AF900771883 /* TasksTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
